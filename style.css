@@ -108,6 +108,7 @@ h1 {
 
 .developing-text.show {
   opacity: 1;
+  animation: floatLeft 1.8s ease-out forwards;
 }
 .photo-frame {
   opacity: 0;
@@ -118,4 +119,14 @@ h1 {
 .photo-frame.show {
   opacity: 1;
   transform: scale(1);
+}
+@keyframes floatLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-150%);
+  }
 }
