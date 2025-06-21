@@ -96,3 +96,15 @@ h1 {
   pointer-events: none;
   transition: opacity 0.2s ease-out;
 }
+.developing-text {
+  opacity: 0;
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+  color: #444;
+  margin-top: 2rem;
+  transition: opacity 1.5s ease-in;
+}
+
+.developing-text.show {
+  opacity: 1;
+}
