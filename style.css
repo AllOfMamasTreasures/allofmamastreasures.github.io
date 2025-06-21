@@ -56,7 +56,8 @@ h1 {
   padding: 5px;
   max-width: 100%;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
+  }
+
 .email-button {
   display: inline-block;
   background-color: #b56576;
