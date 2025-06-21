@@ -7,6 +7,7 @@ body {
 }
 
 h1 {
+  font-family: 'Dancing Script', cursive;
   color: #b56576;
   font-size: 2.5rem;
   border-bottom: 2px solid #f4acb7;
@@ -16,4 +17,28 @@ h1 {
 p {
   font-size: 1.2rem;
   max-width: 600px;
+}
+
+.photo-frame {
+  border: 6px solid #f4acb7;
+  border-radius: 12px;
+  padding: 5px;
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+.email-button {
+  display: inline-block;
+  background-color: #b56576;
+  color: white;
+  padding: 12px 20px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin-top: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.email-button:hover {
+  background-color: #a04e64;
 }
