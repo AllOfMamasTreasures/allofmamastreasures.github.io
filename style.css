@@ -1,0 +1,19 @@
+body {
+  font-family: Georgia, serif;
+  background-color: #fffaf5;
+  color: #333;
+  margin: 2rem;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #b56576;
+  font-size: 2.5rem;
+  border-bottom: 2px solid #f4acb7;
+  padding-bottom: 0.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 600px;
+}
