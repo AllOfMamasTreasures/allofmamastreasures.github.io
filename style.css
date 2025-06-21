@@ -52,6 +52,7 @@ h1 {
 }
 
 .photo-frame {
+  width: 400px;
   border: 6px solid #f4acb7;
   border-radius: 12px;
   padding: 5px;
