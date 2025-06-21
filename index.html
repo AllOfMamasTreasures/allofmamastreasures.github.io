@@ -36,5 +36,23 @@
     }, 150);
   });
 </script>
+<script>
+  window.addEventListener('load', () => {
+    const sound = document.getElementById('shutter-sound');
+    const flash = document.querySelector('.shutter-flash');
+    const devText = document.querySelector('.developing-text');
+
+    sound.play();
+    flash.style.opacity = '1';
+
+    setTimeout(() => {
+      flash.style.opacity = '0';
+    }, 150);
+
+    setTimeout(() => {
+      devText.classList.add('show');
+    }, 300);
+  });
+</script>
 
 </html>
