@@ -81,7 +81,7 @@ h1 {
 
 .developing-text.show {
   opacity: 1;
-  animation: floatLeft 1.8s ease-out forwards;
+  animation: floatRight 1.8s ease-out forwards;
 }
 .photo-frame {
   opacity: 0;
