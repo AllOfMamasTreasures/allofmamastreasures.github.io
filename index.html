@@ -10,7 +10,6 @@
   <audio id="shutter-sound" src="shutter.mp3" preload="auto"></audio>
 <div class="shutter-flash"></div>
 
-  <div class="shutter-flash"></div>
   <div class="developing-text">Developing…</div>
 
   <div class="hero">
@@ -23,35 +22,31 @@
     <img src="1000002137.jpg" alt="Sample Memory" class="photo-frame" />
   </div>
 </body>
-  <script>
-  window.addEventListener('load', () => {
-    const sound = document.getElementById('shutter-sound');
-    const flash = document.querySelector('.shutter-flash');
-
-    sound.play();
-    flash.style.opacity = '1';
-
-    setTimeout(() => {
-      flash.style.opacity = '0';
-    }, 150);
-  });
-</script>
 <script>
   window.addEventListener('load', () => {
     const sound = document.getElementById('shutter-sound');
     const flash = document.querySelector('.shutter-flash');
     const devText = document.querySelector('.developing-text');
+    const photo = document.querySelector('.photo-frame');
 
+    // Play sound
     sound.play();
-    flash.style.opacity = '1';
 
+    // Show flash
+    flash.style.opacity = '1';
     setTimeout(() => {
       flash.style.opacity = '0';
     }, 150);
 
+    // Fade in "Developing…" text
     setTimeout(() => {
       devText.classList.add('show');
     }, 300);
+
+    // Reveal photo
+    setTimeout(() => {
+      photo.classList.add('show');
+    }, 1200);
   });
 </script>
 
