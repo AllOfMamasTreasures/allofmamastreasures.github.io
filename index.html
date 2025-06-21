@@ -7,6 +7,9 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
 </head>
 <body>
+  <audio id="shutter-sound" src="shutter.mp3" preload="auto"></audio>
+<div class="shutter-flash"></div>
+
   <div class="shutter-flash"></div>
   <div class="hero">
     <h1>All of Mama’s Treasures</h1>
@@ -18,4 +21,18 @@
     <img src="1000002137.jpg" alt="Sample Memory" class="photo-frame" />
   </div>
 </body>
+  <script>
+  window.addEventListener('load', () => {
+    const sound = document.getElementById('shutter-sound');
+    const flash = document.querySelector('.shutter-flash');
+
+    sound.play();
+    flash.style.opacity = '1';
+
+    setTimeout(() => {
+      flash.style.opacity = '0';
+    }, 150);
+  });
+</script>
+
 </html>
