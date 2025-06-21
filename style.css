@@ -1,22 +1,54 @@
 body {
+  margin: 0;
   font-family: Georgia, serif;
   background-color: #fffaf5;
   color: #333;
-  margin: 2rem;
-  line-height: 1.6;
+  text-align: center;
 }
 
 h1 {
   font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
   color: #b56576;
-  font-size: 2.5rem;
-  border-bottom: 2px solid #f4acb7;
-  padding-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
 }
 
-p {
-  font-size: 1.2rem;
-  max-width: 600px;
+.hero {
+  background-color: #fde2e4;
+  padding: 4rem 2rem;
+}
+
+.hero p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #b56576;
+  color: white;
+  padding: 14px 28px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a04e64;
+}
+
+.photo-section {
+  padding: 2rem;
+}
+
+.photo-frame {
+  border: 6px solid #f4acb7;
+  border-radius: 12px;
+  max-width: 90%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
 }
 
 .photo-frame {
